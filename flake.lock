@@ -3,11 +3,11 @@
     "CHaP": {
       "flake": false,
       "locked": {
-        "lastModified": 1703398734,
-        "narHash": "sha256-DVaL6dBqgGOOjr3kyHi3NgtD4UrwTVsSMLkpUToyPt4=",
+        "lastModified": 1710945682,
+        "narHash": "sha256-xp1txUjrtCuKHAy0nvz/lu0MlNdNnzvP8l2p9MFB73Y=",
         "owner": "input-output-hk",
         "repo": "cardano-haskell-packages",
-        "rev": "dbfa903050eb861fcbd0c22dd5a4746f68d6d42e",
+        "rev": "8df2bf06e4525ec39c106cd2593e3c5fd7f2b081",
         "type": "github"
       },
       "original": {
@@ -955,11 +955,11 @@
     "hackage": {
       "flake": false,
       "locked": {
-        "lastModified": 1703636672,
-        "narHash": "sha256-QVADvglA1x9WpQFij73VvdvnqquCUCNBM0BOFHXQz0Y=",
+        "lastModified": 1709166121,
+        "narHash": "sha256-HbYr9SdpKOl1J32BPsB2mN9qQRI6cuYpBsHpRzkBllc=",
         "owner": "input-output-hk",
         "repo": "hackage.nix",
-        "rev": "6a9040a7f72c7e629b286a461cf856d987c163ba",
+        "rev": "5cf73b08296632dea6a184da407999950e06613d",
         "type": "github"
       },
       "original": {
@@ -1548,7 +1548,9 @@
     },
     "iogx": {
       "inputs": {
-        "CHaP": "CHaP",
+        "CHaP": [
+          "CHaP"
+        ],
         "easy-purescript-nix": "easy-purescript-nix",
         "flake-utils": "flake-utils_2",
         "hackage": "hackage",
@@ -1567,11 +1569,11 @@
         "sphinxcontrib-haddock": "sphinxcontrib-haddock_3"
       },
       "locked": {
-        "lastModified": 1705571486,
-        "narHash": "sha256-W5K64oz4UzHeoOxaedJrVRtbSSa8P5wcaU45ZASzplE=",
+        "lastModified": 1710240999,
+        "narHash": "sha256-1xHOr098jXPBssdYvNPE0ExzdnGh2NRUMZ/gVc0xbrc=",
         "owner": "input-output-hk",
         "repo": "iogx",
-        "rev": "6eb8822d6e12d1c88b2bf0280b405df0eebe7fe6",
+        "rev": "4af1fc259f53b835ba62a5640d098f8a88b2c8d7",
         "type": "github"
       },
       "original": {
@@ -1585,14 +1587,19 @@
         "iogx": "iogx_2"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-M3xlu7bsl9IfJN0oOMAPaUh4KNE00exej6+yss9eSnA=",
-        "path": "templates/haskell",
-        "type": "path"
+        "dir": "templates/haskell",
+        "lastModified": 1708614239,
+        "narHash": "sha256-7SWCZzXdjyzCspdlawv3gWsF3Sc4ELuG359USBoSz78=",
+        "owner": "input-output-hk",
+        "repo": "iogx",
+        "rev": "b9d68c8e45b1dab0e1a762ac9d51d49d15b724a6",
+        "type": "github"
       },
       "original": {
-        "path": "templates/haskell",
-        "type": "path"
+        "dir": "templates/haskell",
+        "owner": "input-output-hk",
+        "repo": "iogx",
+        "type": "github"
       }
     },
     "iogx-template-vanilla": {
@@ -1600,14 +1607,19 @@
         "iogx": "iogx_3"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-KpBQGIw1+d2FCSRBxWKMwLFh7rIJqWm8pf+MP6gqT1Q=",
-        "path": "templates/vanilla",
-        "type": "path"
+        "dir": "templates/vanilla",
+        "lastModified": 1708614239,
+        "narHash": "sha256-7SWCZzXdjyzCspdlawv3gWsF3Sc4ELuG359USBoSz78=",
+        "owner": "input-output-hk",
+        "repo": "iogx",
+        "rev": "b9d68c8e45b1dab0e1a762ac9d51d49d15b724a6",
+        "type": "github"
       },
       "original": {
-        "path": "templates/vanilla",
-        "type": "path"
+        "dir": "templates/vanilla",
+        "owner": "input-output-hk",
+        "repo": "iogx",
+        "type": "github"
       }
     },
     "iogx_2": {
@@ -1808,15 +1820,16 @@
     "kupo": {
       "flake": false,
       "locked": {
-        "lastModified": 1708083437,
-        "narHash": "sha256-T5KNchfmzbBVZaoILB1Uk1D++Td4zb3DVDomrBOJsjQ=",
-        "owner": "CardanoSolutions",
+        "lastModified": 1712621193,
+        "narHash": "sha256-DF0mBf03NsF/piC4bnTY5lzOvHW9hPmHNHGXwN5NTIQ=",
+        "owner": "Fourierlabs",
         "repo": "kupo",
-        "rev": "b12414a5116adc55bc2da44f3f37823fc86ca874",
+        "rev": "c98ca023c329c961bdf69a66171b04a3910029a7",
         "type": "github"
       },
       "original": {
-        "owner": "CardanoSolutions",
+        "owner": "Fourierlabs",
+        "ref": "fix-sanchonet",
         "repo": "kupo",
         "type": "github"
       }
@@ -2777,6 +2790,7 @@
     },
     "root": {
       "inputs": {
+        "CHaP": "CHaP",
         "iogx": "iogx",
         "kupo": "kupo"
       }

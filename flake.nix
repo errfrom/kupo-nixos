@@ -1,9 +1,16 @@
 {
   description = "Nix flake for Kupo including a NixOS module";
   inputs = {
-    iogx.url = "github:input-output-hk/iogx";
+    CHaP = {
+      url = "github:input-output-hk/cardano-haskell-packages?ref=repo";
+      flake = false;
+    };
+    iogx = {
+      url = "github:input-output-hk/iogx";
+      inputs.CHaP.follows = "CHaP";
+    };
     kupo = {
-      url = "github:CardanoSolutions/kupo";
+      url = "github:Fourierlabs/kupo/fix-sanchonet";
       flake = false;
     };
   };
@@ -18,7 +25,6 @@
       inherit inputs systems;
       repoRoot = ./.;
       outputs = import ./nix/outputs.nix;
-      #outputs = _: [ ];
       flake = {
         inherit (nixos) nixosModules;
         herculesCI = {
