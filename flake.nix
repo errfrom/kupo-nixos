@@ -19,18 +19,12 @@
       # TODO enable kupo supported OS's
       systems = [ "x86_64-linux" ];
       ciSystems = systems;
-      nixos = import ./nixos.nix inputs self;
     in
     inputs.iogx.lib.mkFlake {
       inherit inputs systems;
       repoRoot = ./.;
       outputs = import ./nix/outputs.nix;
-      flake = {
-        inherit (nixos) nixosModules;
-        herculesCI = {
-          inherit ciSystems;
-        };
-      };
+      flake = (import ./nix/flake.nix) ciSystems self;
     };
 
   nixConfig = {
