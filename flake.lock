@@ -3,11 +3,11 @@
     "CHaP": {
       "flake": false,
       "locked": {
-        "lastModified": 1715003668,
-        "narHash": "sha256-glaw6l5R7TTHxC1rfHs6IayoAwrtGuN7WBKZfb1V7Eg=",
+        "lastModified": 1718715677,
+        "narHash": "sha256-k0uw32xM9s50w75mtSK9ne82l56sGNYkZN9jveYTQL4=",
         "owner": "input-output-hk",
         "repo": "cardano-haskell-packages",
-        "rev": "50e6104658d745a15f30ecc2e7e87875930e8e1d",
+        "rev": "19e2226e504861567da268327e2941768ade8463",
         "type": "github"
       },
       "original": {
@@ -9830,16 +9830,16 @@
     "kupo": {
       "flake": false,
       "locked": {
-        "lastModified": 1715087353,
-        "narHash": "sha256-yPI3Hs3i8HG1k/p7VYRsS8LR9JukgRI1mg3UqIhXDRI=",
-        "owner": "Fourierlabs",
+        "lastModified": 1718734761,
+        "narHash": "sha256-J5eys+/VjeYqfBlcS+XW+Gzafq0/qkbOfY6b05JmFYI=",
+        "owner": "klarkc",
         "repo": "kupo",
-        "rev": "fa1d44404b6542815de21cd3f4c5750019c6dc9b",
+        "rev": "d95a324f6a94a963cd91cb5d5f88ef50640e7b8d",
         "type": "github"
       },
       "original": {
-        "owner": "Fourierlabs",
-        "ref": "fix-sanchonet",
+        "owner": "klarkc",
+        "ref": "patch-1",
         "repo": "kupo",
         "type": "github"
       }

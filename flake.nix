@@ -10,7 +10,7 @@
       inputs.CHaP.follows = "CHaP";
     };
     kupo = {
-      url = "github:Fourierlabs/kupo/fix-sanchonet";
+      url = "github:klarkc/kupo/patch-1";
       flake = false;
     };
   };
