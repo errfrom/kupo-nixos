@@ -17,8 +17,8 @@
   outputs = inputs@{ self, ... }:
     let
       # TODO enable kupo supported OS's
-      systems = [ "x86_64-linux" ];
-      ciSystems = systems;
+      systems = [ "x86_64-linux" "x86_64-darwin" ];
+      ciSystems = [ "x86_64-linux" ];
     in
     inputs.iogx.lib.mkFlake {
       inherit inputs systems;
